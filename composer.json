@@ -1,0 +1,43 @@
+{
+    "name": "gpibarra/dusk-for-laravel-zero",
+    "description": "Dusk for Laravel Zero allows the usage of Laravel Dusk in Laravel/Laravel Zero as testing.",
+    "keywords": ["test", "phpunit", "pest", "pestphp", "php", "laravel-zero", "laravel", "Laravel Dusk", "artisan", "symfony"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/gpibarra/dusk-for-laravel-zero/issues",
+        "source": "https://github.com/gpibarra/dusk-for-laravel-zero"
+    },
+    "authors": [
+        {
+            "name": "Gerardo Ibarra",
+            "email": "ibarragp@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "laravel/dusk": "^5.11|^6.0",
+        "laravel-zero/framework": "^7.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NunoMaduro\\DuskForLaravelZero\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NunoMaduro\\DuskForLaravelZero\\DuskForLaravelZeroServiceProvider"
+            ]
+        }
+    },
+    "suggest": {
+        "phpunit/phpunit": "Required to perform browser test assertions."
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
